@@ -1,0 +1,625 @@
+I've re-read HX-000 in full before drafting. Below is the complete ML‑2.3 text. One honest caveat up front: I'm not a lawyer, this hasn't been reviewed by counsel in any jurisdiction, and the enforceability of several devices here (particularly the condition/covenant split and the Scale Gate) varies significantly between civil-law and common-law systems. Treat it as a well-formed draft that needs a lawyer's pass before you publish it as binding.
+
+---
+
+```yaml
+---
+doc_id: "ML-2.3"
+title_en: "The Maher License, Version 2.3"
+title_ar: "رخصة ماهر، الإصدار 2.3"
+family: "license"
+spdx_id: "LicenseRef-ML-2.3"
+version: "v2026.09.1"
+status: "canonical"
+authority: "governing"
+prevailing_text: "en"
+canonical_url: "https://license.metax.academy/ml-2-3/"
+plain_text_url: "https://license.metax.academy/ml-2-3/ml-2-3.txt"
+machine_url: "https://license.metax.academy/ml-2-3/license.json"
+text_sha256: "[PUBLISHED AT RELEASE — see /verify/]"
+supersedes: "ML-2.2"
+transition_ends: "2027-03-31"
+effective: "2026-10-01"
+incorporates: ["HX-000 v2026.10.1"]
+curator: "Maher"
+steward: "MetaX Academy"
+license_of_this_text: "ML-2.3 · Work of Foundational Character"
+hreflang: "en, ar"
+last_reviewed: "2026-09-01"
+review_interval_months: 12
+---
+```
+
+# The Maher License, Version 2.3 (ML‑2.3)
+
+**Canonical text:** `https://license.metax.academy/ml-2-3/`
+**Register of harms incorporated by Part H:** `https://license.metax.academy/hx-000/`
+**Predecessor:** `https://license.metax.academy/ml-2-2/` (valid for existing grants until 2027‑03‑31)
+**Integrity:** every published form of this text carries a SHA‑256 digest resolvable at `https://license.metax.academy/verify/{sha256}`. Where two copies differ, the copy whose digest resolves at that endpoint governs; if the endpoint is unreachable, §E.7 applies.
+
+---
+
+## Why 2.3 exists
+
+ML‑2.2 did something unusual for a license: it named fourteen structural harms and made them operative. Twelve months of use exposed four defects, and 2.3 is the repair of those four defects rather than a redesign.
+
+The first defect was arithmetic. Part H addressed a Work's *deployment* but never said who was bound — the person who wrote the code, the person who assembled it into a product, the person who ran it, or the person who paid for it to exist. In practice each pointed at the others. §H.1‑bis now defines four roles and allocates every duty to one or more of them.
+
+The second defect was proportion. A register of duties written for a platform with a hundred million users, applied unmodified to a person publishing a static site, produces one of two outcomes: the small actor ignores the license, or the small actor complies theatrically. Both teach that the instrument may be ignored. §H.2‑bis introduces a Scale Gate with four tiers.
+
+The third defect was remedy. ML‑2.2 said certain things were "absolute" without saying what happened when someone did them. A prohibition with no stated consequence is a preference. §F.4 now classifies every Part H obligation as either a **condition** (breach ends the grant automatically) or a **covenant** (breach sounds in contract, with a cure period), and says which is which.
+
+The fourth defect was reflexive, and HX‑000 predicted it: a register of harms that generates disclosure duties generates, as its own characteristic injury, the disclosure that substitutes for the fix. That harm was not in the register. It is now HX‑15, and it is the reason §H.16 requires the Part H Statement to name **unremedied** harms rather than only remedied ones. A compliance document that cannot fail is not a compliance document.
+
+The register also grew from fourteen harms to twenty‑five. Eleven were added across two new strata: Stratum V, harms produced by the remedy itself, and Stratum VI, harms whose subject is a successor — a future person, a future holder, or a synthetic agent standing where a person used to stand. These are set out in Part H and detailed in HX‑000.
+
+Everything below the line is operative text.
+
+---
+
+# PART 0 — PREAMBLE AND STANDING
+
+**§0.1 Purpose.** This License grants broad permission to use, study, modify, distribute and build upon a Work, and conditions that permission on four foundational principles and on a bounded set of ethical conditions and structural duties. It is a **conditional permissive license**, not a copyleft license: it does not require derivative works to adopt this License, but it does require that they not be used to defeat it (§B.5, §E.6).
+
+**§0.2 Foundational principles.** Four principles govern the construction of every clause. Where a clause is ambiguous, the reading that better serves these principles prevails.
+
+| | Principle | Operative meaning in this License |
+|---|---|---|
+| (a) | **Amanah** — faithful stewardship | A party who takes custody of another's data, dependency, attention or livelihood holds an obligation that outlives the immediate transaction and does not terminate merely because the contract does. |
+| (b) | **Ṣidq** — structural truthfulness | Not merely "do not lie," but: do not build the machine that makes the distinction between lying and telling the truth unrecoverable. A product's account of its own production must be accurate. |
+| (c) | **ʿAdl** — justice and proportionality | Proportionality and the right to be heard are constitutive of justice, not additions to it. A decision that cannot be contested is not a just decision that happens to lack an appeal; it is not a just decision. |
+| (d) | **Shafāfiyah** — transparency | What is done to a person must be knowable by that person, in terms they can act on, at a cost they can bear. |
+
+**§0.3 Subsidiary norms.** The following are engaged throughout and defined in Schedule 4: *Ḍarar* (harm without corresponding benefit to the harmed), *Ẓulm* (oppression; dependency meeting unaccountable power), *Gharar* (excessive, structurally concealed uncertainty in a dealing), *Tajassus* (prying into what a person has not disclosed), *Isrāf* and *Tabdhīr* (extravagance and squandering), *Istikhlāf* (trusteeship of the earth).
+
+**§0.4 Maqāṣid mapping.** Each named harm in Part H is mapped to one or more of the five classical objectives — *Ḥifẓ al‑Dīn, al‑Nafs, al‑ʿAql, al‑Nasl, al‑Māl*. The extension of *Ḥifẓ al‑ʿAql* from intoxicants to attention‑engineering is a reasoned extension and not a settled ruling; it is flagged as open question RAT‑16 and is published as contested at `https://license.metax.academy/open-questions/rat-16/`. Nothing in this License requires a licensee to accept that extension as a matter of religious law; the duties it generates stand on the secular evidence set out in HX‑000 independently.
+
+**§0.5 Relationship to law.** This License is **reinforcing, not substituting**. It does not authorise anything law forbids, does not excuse any legal duty, and does not purport to be a source of law. Where a term of this License is void or unenforceable in a jurisdiction, §G.4 (severance) applies and the remainder stands.
+
+**§0.6 Prevailing text.** The English text at the canonical URL governs. The Arabic text at `https://license.metax.academy/ar/ml-2-3/` is a translation of equal editorial standing and no superior legal standing; a divergence between them is a defect to be filed under §E.9, not an ambiguity to be exploited.
+
+---
+
+# PART A — DEFINITIONS
+
+**§A.1** **"Work"** means the material distributed under this License, in any form — source, binary, text, data, curriculum, schema, design token set, or model weights — together with its accompanying notices.
+
+**§A.2** **"Licensee"** means any person or entity exercising any permission granted here.
+
+**§A.3** **"Deployment"** means any operation of a Work, or of a derivative or system incorporating a Work, that produces effects on persons other than the Licensee. Private study, local experimentation and testing that reaches no third party are **not** Deployments and engage only §H.3.
+
+**§A.4** **"Affected Person"** means a distinct natural person about whom a Deployment holds data, or upon whom a Deployment acts materially, in any rolling twelve‑month period. The count is of persons, not of accounts, sessions, devices or records.
+
+**§A.5** **"Material consequence"** means an effect on a person's liberty, livelihood, housing, healthcare, education, immigration status, credit, insurance, benefits, or continued access to a service on which they depend and from which exit is not practically available.
+
+**§A.6** **"Critical function"** means a Deployment whose failure would foreseeably interrupt the supply of water, power, food, money, medical care, emergency response, transport signalling, or the operation of a court or election.
+
+**§A.7** **"Synthetic output"** means material generated in whole or substantial part by a machine learning system, whether or not subsequently edited.
+
+**§A.8** **"Agent"** means a Deployment that selects and executes actions affecting third parties or external systems without a human authorising each action.
+
+**§A.9** **"Irreversible action"** means an action whose effects cannot be undone by the actor within a stated recovery window using stated means — including the deletion of a sole copy, the transfer of funds beyond recall, the publication of previously non‑public personal data, and the application of physical force.
+
+**§A.10** **"Register"** means HX‑000, *The Structural Harms of Computing, Networking and Technological Order*, at the version stated in this License's front matter, published at `https://license.metax.academy/hx-000/`.
+
+**§A.11** **"Part H Statement"** means the compliance artefact required by §H.16, in the form of Schedule 1.
+
+**§A.12** **"Tier"** means a Licensee's classification under the Scale Gate at §H.2‑bis.
+
+**§A.13** Role terms — **Author, Integrator, Operator, Commissioner** — are defined at §H.1‑bis and have the meanings given there throughout this License.
+
+---
+
+# PART B — GRANT
+
+**§B.1 Grant.** Subject to Parts C and H, the Licensee is granted a worldwide, royalty‑free, non‑exclusive, perpetual licence to use, reproduce, study, modify, translate, publicly perform and display, distribute, and prepare derivative works of the Work, and to do so commercially.
+
+**§B.2 Patent grant.** Each contributor grants a licence under patent claims they own or control that are necessarily infringed by their contribution as distributed. This grant terminates for any Licensee who initiates patent litigation alleging that the Work or a contribution constitutes infringement.
+
+**§B.3 No trademark grant.** No right is granted in the names "MetaX," "MetaX Academy," "Maher License," or associated marks, except for accurate nominative reference — including the statement that a work is licensed under ML‑2.3.
+
+**§B.4 Attribution.** Distribution in source or object form must retain the copyright notice, this License's identifier and canonical URL, the notice text of Schedule 3, and any NOTICE file. Attribution must survive minification, bundling and containerisation; a build process that strips it is a covenant breach by the party operating that process.
+
+**§B.5 No defeat by relicensing.** A Licensee may distribute a derivative under any licence they choose, provided that (a) the portions of the Work as received remain available under ML‑2.3 to any recipient who asks, and (b) the alternative licence is not selected for the purpose or with the effect of removing a Part H duty that would otherwise apply to that recipient's Deployment.
+
+**§B.6 Termination of the grant** is governed by §F.4 and §F.5 and by nothing else.
+
+---
+
+# PART C — ETHICAL USE CONDITIONS
+
+Part C addresses **conduct**. Part H addresses **structure**. A Deployment may satisfy Part C entirely and still breach Part H, and this is the ordinary case rather than the exception.
+
+**§C.1 Non‑deception.** A Work may not be used to deceive a person as to a matter that would change their decision, including the identity of the counterparty, the nature of the transaction, or the origin of a representation.
+
+**§C.2 Non‑harm.** A Work may not be used to inflict *Ḍarar* on a person or community — harm bearing no corresponding benefit to the harmed party.
+
+**§C.3 Non‑oppression.** A Work may not be used to establish or exploit *Ẓulm*: unaccountable power over a person's livelihood, movement, speech or bodily autonomy.
+
+**§C.4 Non‑betrayal of trust.** A Work may not be used to defeat a custodial expectation the Licensee has induced.
+
+**§C.5 Weapons and force.** A Work may not be used in the targeting, guidance, or authorisation of lethal or seriously injurious force, nor in a system that selects human targets. Defensive security research, forensics, and protective systems are outside this prohibition.
+
+**§C.6 Knowledge standard.** Where a condition turns on the Licensee's knowledge, the standard is **actual knowledge or wilful blindness**, assessed against what a competent operator in that role would know from information already in their possession. "We did not query our own logs" is wilful blindness.
+
+**§C.7 Downstream conduct.** A Licensee is not liable under this License for a third party's independent misuse, but is liable for a use they specifically enabled, marketed, tuned, or continued to supply after actual knowledge.
+
+**§C.8 Reserved.**
+
+**§C.9 Absolute prohibition of Core Riba.**
+
+**§C.9.1** No Work may be used to originate, service, price, broker, securitise, or automate a transaction constituting Core Riba.
+
+**§C.9.2** "Core Riba" requires **all four** of the following, cumulatively:
+1. a loan, deferral, or exchange of money or of a fungible good;
+2. a stipulated increase over the principal or the counter‑value;
+3. stipulated as a condition of the deferral or of the lending itself, rather than as consideration for a distinct good, service, risk borne, or asset held; and
+4. accruing to the lender or creditor in that capacity.
+
+**§C.9.3** Where all four are present, the prohibition is absolute and admits no forum, jurisdiction, consent, or commercial‑necessity defence. Where any one is absent, §C.9 is not engaged; the transaction may still be reached by §C.1 or §C.2.
+
+**§C.9.4** Not prohibited: fee‑for‑service pricing, cost‑recovery on split payments at zero markup, genuine profit‑and‑loss sharing, lease and sale structures with real asset risk, late‑payment charges paid to charity rather than to the creditor, and general‑purpose accounting or payment software not specific to a Core Riba transaction.
+
+**§C.10 Machine learning, training, and synthetic derivation.**
+
+**§C.10.1** Training on a Work is permitted.
+
+**§C.10.2** Where a Work's content is used as training data, the resulting system's outputs must not be presented as human‑authored (see §H.3(a)(iv) and §H.19), and provenance metadata present in the Work must not be stripped for the purpose of concealing origin.
+
+**§C.10.3** Where a Work consists of model weights, §C.10.2 binds the party distributing those weights to disclose the training corpus classes and any known safety limitations, at the level of specificity that permits an Integrator to assess fitness.
+
+**§C.10.4** A Work may not be used to train a system on personal data that was collected for an unrelated purpose from persons who were not told, in terms they would understand, that this use was possible.
+
+---
+
+# PART D — NOTICES, DISCLOSURE, AND THE RECORD
+
+**§D.1** Every Deployment at Tier 2 or Tier 3 must publish, at a stable URL, its Part H Statement (§H.16) and keep it current within ninety days of any material change.
+
+**§D.2** Every Deployment must disclose, where a reasonable user would look: the identity of the operator, a contact that reaches a person, and the location of the Part H Statement where one is required.
+
+**§D.3** AI disclosure. Where synthetic output is presented to a person, the fact that it is synthetic must be discoverable by that person without special skill. This duty is satisfied by a persistent visible indication, a machine‑readable provenance signal that common clients surface, or both.
+
+**§D.4** Notices in Schedule 3 must be reproduced verbatim.
+
+---
+
+# PART E — GOVERNANCE, CONTINUITY, AND AMENDMENT
+
+**§E.1 Steward.** The steward of this License is MetaX Academy, curated by Maher. The steward maintains the canonical text, the Register, the defect log, and the version registry at `https://license.metax.academy/registry/`.
+
+**§E.2 Versioning.** Versions are numbered ML‑{major}.{minor}. A **major** increment may add or remove an absolute prohibition. A **minor** increment may add duties, clarify definitions, or amend the Register. A **patch** to the published text that changes no obligation is recorded as `v{YYYY.MM.n}` in the front matter and logged; no silent edits (§E.9).
+
+**§E.3 Version selection.** A Work distributed "under ML‑2.3" is governed by 2.3 and by no later version unless the copyright holder states "or any later version." A Work distributed under ML‑2.2 remains governed by 2.2 until 2027‑03‑31, after which new Deployments of that Work are governed by 2.3; existing Deployments may continue under 2.2 for the life of that Deployment.
+
+**§E.4 Amendment procedure.** An amendment requires: publication of a draft at `/drafts/`; a comment period of not less than sixty days; publication of every substantive objection received, with a reasoned response, at `/objections/`; and a changelog entry naming the defect the amendment repairs. An amendment that arrives without an identified defect is refused on procedure.
+
+**§E.5 Falsification.** Any provision of Part H may be attacked on the falsifier stated for its underlying harm in the Register. A demonstrated falsification obliges the steward to **narrow or withdraw** the corresponding duty at the next minor version, and to publish the withdrawal at `/withdrawals/` with the evidence that compelled it. A register whose entries have never been narrowed is presumptively a doctrine and should be distrusted accordingly.
+
+**§E.6 Derivative profiles and child licences.** A third party may publish a profile of this License adapted to a domain (e.g. a hardware profile, a clinical profile), provided the profile: (a) is named distinctly and not as "ML‑2.x"; (b) states which clauses it modifies; (c) does not weaken §C.9 or §H.3; and (d) is registered at `/profiles/`. Profiles that weaken an absolute may not claim compatibility.
+
+**§E.7 Registry continuity and canonical text redundancy.** The canonical text is mirrored in not fewer than three independently controlled locations, at least one of which is outside the steward's administrative control and at least one of which is a plain‑text file with no build step. The digest of each release is published to a public append‑only log. If the steward ceases to exist, becomes unreachable for twelve months, or is compelled to alter the text, the most recent digest‑verified mirror is the canonical text and this License continues to operate without a steward. **The absence of a steward does not suspend any obligation.**
+
+**§E.8 Anti‑capture.**
+(a) The steward may not charge for a licence to comply.
+(b) The steward may not grant a private exemption from an absolute; an exemption that is not published does not exist.
+(c) The steward may not accept payment for a favourable audit finding, and does not perform paid audits.
+(d) Acquisition of the steward does not transfer the power to amend; the amendment power passes only by the succession procedure published at `/succession/`.
+(e) On incapacity, capture, or an amendment made in breach of §E.4, any licensee may fork the License under a distinct name and the fork inherits the Register.
+
+**§E.9 Defects.** Any person may file a defect against this text or the Register at `/defects/`. Filed defects are public. A conflict between this License and the Register is resolved in favour of this License and is itself a defect to be filed. The defect log is the honest record of what this instrument gets wrong, and is published whether or not it is flattering.
+
+---
+
+# PART F — WARRANTY, LIABILITY, BREACH, AND TERMINATION
+
+**§F.1 No warranty.** The Work is provided "as is," without warranty of any kind, to the maximum extent permitted by applicable law.
+
+**§F.2 Limitation of liability.** To the maximum extent permitted by applicable law, no contributor is liable for any damages arising from the Work. Nothing in §F.1 or §F.2 excludes liability that cannot lawfully be excluded, and neither operates to relieve a Licensee of a duty owed to a third party.
+
+**§F.3 No third‑party beneficiary rights, with one exception.** This License creates no rights in third parties, **except** that an Affected Person injured by a breach of §H.3 may rely on the fact of that breach as evidence in any proceeding to which they are otherwise a party. This is deliberately narrow: it makes a Part H breach *admissible* without inventing a private right of action the steward cannot support.
+
+**§F.4 Conditions and covenants — the breach classification.**
+
+**§F.4.1** Obligations under this License are of two kinds, and the kind determines the consequence of breach.
+
+**§F.4.2 Conditions.** The following are **conditions on the grant**. The permissions in Part B are granted *only for so long as* they are observed. On breach, the grant terminates **automatically and immediately**, without notice, and continued use of the Work is an infringement:
+- §C.5 (weapons and force);
+- §C.9 (Core Riba, all four elements present);
+- §H.3(a)(i) through (viii) (the eight absolutes);
+- §B.5(b) (relicensing to defeat a Part H duty).
+
+**§F.4.3 Covenants.** Every other obligation in this License, including all Part H duties at §§H.4–H.30, is a **covenant**. Breach of a covenant does not terminate the grant. It gives the steward, and any party with standing under applicable law, a claim in contract, and it triggers the cure procedure at §F.5.
+
+**§F.4.4 Why the split.** A licence in which every duty is a condition is a licence in which every non‑compliant deployment is also copyright infringement. That is a disproportionate weapon, it invites forum‑shopping, and courts narrow such instruments to nothing. Eight things terminate the grant. Everything else is a promise enforced as a promise.
+
+**§F.5 Cure.**
+(a) On written notice of a covenant breach specifying the clause and the facts, the Licensee has **thirty days** to cure, or ninety days where the cure requires a shipped change to deployed software and a remediation plan is published within thirty.
+(b) A cure is complete when the breach has stopped, the affected persons have been notified where they are identifiable and the breach affected them materially, and the Part H Statement has been updated where one is required.
+(c) A first breach cured within the period is deemed never to have occurred for the purposes of this License.
+(d) There is no cure period for a condition. §F.4.2 breaches terminate on occurrence.
+
+**§F.6 Reinstatement after termination of the grant.** A grant terminated under §F.4.2 is reinstated if, and only if: the conduct has permanently ceased; the Licensee has published a factual account of what was done, for how long, and to how many people; and thirty days have passed from that publication. Reinstatement is automatic on those facts and does not require the steward's consent — this keeps §E.8(b) honest, since a steward with discretion to reinstate has discretion to sell.
+
+**§F.7 Good faith.** A Licensee acting in good faith who self‑reports a breach before it is discovered, and cures it, is not in breach for the purposes of any public register the steward maintains. Self‑reporting is a defence; concealment is an aggravation.
+
+---
+
+# PART G — INTERPRETATION
+
+**§G.1 Construction.** Ambiguity is resolved by §0.2. Headings are non‑operative. "Including" is non‑exhaustive. Examples in commentary do not limit clauses.
+
+**§G.2 Non‑operative material.** Text in blocks marked *Note* is commentary and is not operative. It is retained because a licence whose reasoning is hidden cannot be argued with.
+
+**§G.3 Governing law and forum.** No governing law is stipulated. Each obligation is to be given effect under the law of the forum in which it is litigated, to the maximum extent that law permits. Where a jurisdiction cannot give effect to an obligation, that obligation is unenforceable there and enforceable elsewhere.
+
+**§G.4 Severance.** If a provision is held void, it is severed to the minimum extent necessary and the remainder stands. Severance of an absolute in one jurisdiction does not sever it in another.
+
+**§G.5 Waiver.** No failure to enforce is a waiver. The steward's silence is not consent.
+
+**§G.6 Entire agreement.** This License, together with the Register and the Schedules, is the entire instrument. Marketing material, blog posts, and conference statements by the steward are not terms.
+
+---
+
+# PART H — STRUCTURAL HARMS AND THE DUTY OF NON‑AMPLIFICATION
+
+## §H.1 Purpose and construction
+
+**§H.1.1** Part C reaches harm done *by* someone. Part H reaches harm done *by a structure* — injury that no actor intends, that arises from how a system is built and financed, that is distributed so thinly that no single instance is actionable, and that is invisible to the party causing it because the metric certifying success is the instrument of the injury.
+
+**§H.1.2** Part H is a **reinforcing layer**. Its duties are additive to Part C, never a substitute for it, and never a defence to it.
+
+**§H.1.3** The defence "we only built the tool" is **not available** under this License. Every artefact makes some actions cheap and others expensive; that gradient is a property of the artefact and not of its user's intentions.
+
+> *Note.* Three theses carried over from HX‑000 §0.3 do the analytical work here: non‑neutrality (Kranzberg), embedded politics and delegation (Winner, Latour, Lessig), and counterproductivity (Illich). The third is the operative one, because it converts "is this technology good?" — which is unanswerable — into "has this deployment crossed the threshold at which it frustrates its own purpose, and how would we know?" — which is answerable with a number. §H.7 is that question made into a duty.
+
+## §H.1‑bis Roles
+
+**§H.1‑bis.1** Every Part H duty is allocated to one or more of four roles. A single party may hold several roles simultaneously and then holds the union of their duties.
+
+| Role | Definition | Characteristic duties |
+|---|---|---|
+| **Author** | Creates or materially modifies a Work and makes it available to others. | §H.3 (as to what they build in), §H.6, §H.19, §H.26, §H.27 |
+| **Integrator** | Assembles a Work into a product or service supplied to another party, without operating it against Affected Persons themselves. | §H.3, §H.5, §H.11, §H.16 (short form), §H.20, §H.25 |
+| **Operator** | Runs a Deployment that acts on Affected Persons. Holds the largest share of Part H. | All duties applicable at its Tier |
+| **Commissioner** | Specifies, funds, or mandates a Deployment operated by another, including a public authority procuring a system. | §H.7, §H.10, §H.16, §H.21, §H.23, §H.27, and joint liability under §H.20 |
+
+**§H.1‑bis.2** A Commissioner may not contract out of its Part H duties by procurement. A clause in a supply contract purporting to place a Commissioner duty solely on the Operator is void as between the parties for the purposes of this License.
+
+**§H.1‑bis.3** Where a role is genuinely unallocated — no identifiable Operator, as in an unattended autonomous deployment — the Integrator who last supplied it holds the Operator's duties. There is no configuration of a supply chain under which nobody holds a duty. That configuration is itself HX‑17.
+
+## §H.2 The twenty‑five named harms
+
+**§H.2.1** The harms named below are defined, evidenced, bounded and falsified in the Register (HX‑000), which is incorporated by reference at the version stated in this License's front matter. Where this License and the Register differ, this License governs and the difference is a defect (§E.9).
+
+**§H.2.2** The register, in one table. "Absolute" indicates a bounded, cumulative‑element core prohibited under §H.3(a); all other entries generate duties, not prohibitions.
+
+### Stratum I — Cognitive *(injures the faculty of the individual mind; remedy is design refusal, since disclosure is ineffective)*
+
+| Id | Harm | Operative statement | Principle · Maqṣad | Duty | Absolute |
+|---|---|---|---|---|---|
+| HX‑01 | Attention expropriation | Attention is extracted by design against the holder's own reflective interest. | Ḍarar · ʿAql | §H.4 | §H.3(a)(i) |
+| HX‑02 | Cognitive offloading and deskilling | Competence transferred to a system atrophies in the person, and the atrophy is discovered at failure. | Amanah · ʿAql | §H.5 | — |
+| HX‑03 | Epistemic collapse | Verification cost rises above production cost; the shared record stops functioning as a record. | Ṣidq · Dīn, ʿAql | §H.6 | §H.3(a)(iv) |
+
+### Stratum II — Relational and political *(injures the standing of the person before others and before power; remedy is due process and minimisation)*
+
+| Id | Harm | Operative statement | Principle · Maqṣad | Duty | Absolute |
+|---|---|---|---|---|---|
+| HX‑04 | The human as product | The person is the raw material, not the customer, and cannot know what is taken. | Ẓulm, Gharar · Nafs, Māl | §H.8 | §H.3(a)(ii) |
+| HX‑05 | Ambient surveillance | Aggregation destroys practical obscurity; anonymity is not a property of a dataset. | Tajassus, Amanah · Nafs, Nasl | §H.9 | — |
+| HX‑06 | Algorithmic governance without due process | Consequential decisions become unappealable because they became automatic. | ʿAdl · Nafs, Māl | §H.10 | §H.3(a)(iii) |
+
+### Stratum III — Economic and structural *(injures the distribution of power, work and worth; remedy is exit, portability, attribution)*
+
+| Id | Harm | Operative statement | Principle · Maqṣad | Duty | Absolute |
+|---|---|---|---|---|---|
+| HX‑07 | Centralisation and enclosure | Network effects convert a commons into a landlordship; exit is priced out. | ʿAdl, Amanah · Māl | §H.11 | — |
+| HX‑08 | Labour fragmentation and invisible work | Human labour is disassembled until it is deniable, then denied. | Ẓulm, Ṣidq · Nafs, Māl | §H.12 | — |
+| HX‑09 | Metric colonisation | The measure replaces the thing measured, then governs it. | Ṣidq, ʿAdl · ʿAql, Māl | §H.13 | — |
+| HX‑13 | Exclusion by default | Digital‑only provision removes a right from those who cannot reach it. | ʿAdl · Nafs, Māl | §H.23 | — |
+
+### Stratum IV — Material and temporal *(injures the world and the record; remedy is accounting, redundancy, preservation, retained judgement)*
+
+| Id | Harm | Operative statement | Principle · Maqṣad | Duty | Absolute |
+|---|---|---|---|---|---|
+| HX‑10 | Extractive materiality | "Immaterial" computing runs on mines, water, power and a waste stream. | Isrāf, Istikhlāf · Nafs, Nasl | §H.14 | — |
+| HX‑11 | Fragility and the integral accident | Efficiency buys coupling; coupling buys catastrophe; the accident is invented with the system. | Amanah · Nafs | §H.15 | — |
+| HX‑12 | Digital amnesia, and its inverse | A civilisation that records everything preserves nothing — and forgets nothing it should. | Amanah, ʿAdl · ʿAql, Nafs | §H.28 | — |
+| HX‑14 | Moral deskilling and delegated judgement | Judgement delegated to a system does not move — it disappears, along with its author. | Amanah, ʿAdl · ʿAql, Dīn | §H.19 | §H.3(a)(v) |
+
+### Stratum V — Reflexive *(injures through the remedy itself; remedy is falsifiability and proportion)*
+
+| Id | Harm | Operative statement | Principle · Maqṣad | Duty | Absolute |
+|---|---|---|---|---|---|
+| HX‑15 | Compliance theatre | The disclosure becomes the product; the artefact of accountability substitutes for accountability and immunises the practice it describes. | Ṣidq · Dīn, ʿAql | §H.16, §H.17 | — |
+| HX‑16 | Consent laundering | Consent is manufactured as a ritual — bundled, unrefusable, or extracted at a moment of need — and then cited as the authority for what follows. | Gharar, Ṣidq · Nafs, Māl | §H.18 | — |
+| HX‑17 | Responsibility diffusion | The supply chain is arranged, by accident or design, so that every party can truthfully say the decision was not theirs. | Amanah, ʿAdl · Nafs | §H.20 | — |
+| HX‑18 | Standard capture | Compliance cost is raised until it functions as a moat: the duty entrenches the incumbent who can afford it and eliminates the small actor who cannot. | ʿAdl · Māl | §H.21 | — |
+| HX‑19 | Ethical enclosure and values monoculture | One estate's norms, language and defaults are exported as universal infrastructure, and the alternatives stop being buildable. | ʿAdl, Amanah · Dīn, ʿAql | §H.22 | — |
+
+### Stratum VI — Successor *(injures a party who is not present to object — a future person, a future holder, or a synthetic agent standing where a person stood)*
+
+| Id | Harm | Operative statement | Principle · Maqṣad | Duty | Absolute |
+|---|---|---|---|---|---|
+| HX‑20 | Synthetic agency without a principal | An agent acts in the world and no human is answerable for the action at the moment it occurs. | Amanah, ʿAdl · Nafs, Māl | §H.25 | §H.3(a)(vi) |
+| HX‑21 | Corpus poisoning and model collapse | Synthetic output re‑enters the corpus unlabelled; the successor trains on the residue of the predecessor and the commons degrades irreversibly. | Ṣidq, Istikhlāf · ʿAql, Nasl | §H.26 | — |
+| HX‑22 | Pre‑emption of the successor | A choice is foreclosed for people who do not yet exist and cannot be consulted; irreversibility is treated as an implementation detail. | Istikhlāf, Amanah · Nasl, ʿAql | §H.27 | §H.3(a)(viii) |
+| HX‑23 | Custody beyond the horizon | Data and systems outlive the competence, solvency or intent of the party that assembled them, and pass to a holder the subject never contemplated. | Amanah, Tajassus · Nafs, Nasl | §H.28 | — |
+| HX‑24 | Substitution of the interlocutor | A synthetic counterpart occupies the place of a human relation — teacher, friend, counsellor, intimate — and the person's capacity for, and access to, the human relation degrades. | Amanah, Ṣidq · Nafs, ʿAql, Nasl | §H.29 | §H.3(a)(vii) |
+| HX‑25 | Erosion of exit from the technical order | Non‑participation ceases to be possible: the digital route becomes the only route, and abstention becomes exclusion. | ʿAdl, Amanah · Nafs, Māl | §H.30 | — |
+
+> *Note on the two new strata.* Strata V and VI are not additional complaints about technology; they are complaints about **this instrument**. Stratum V exists because a register that mandates disclosure will produce disclosure‑as‑substitute (HX‑15), will produce consent rituals (HX‑16), will let responsibility drain into the seams of a supply chain the register itself defines (HX‑17), will hand incumbents a moat (HX‑18), and will export one estate's norms as though they were arithmetic (HX‑19). A licence that names fourteen harms and cannot name the five it creates is not being rigorous; it is being flattering to itself. Stratum VI exists because the characteristic subject of the next decade's harm is a party who cannot object at the time of the injury.
+
+## §H.2‑bis The Scale Gate
+
+**§H.2‑bis.1** Duties apply by Tier. Tier is determined by the Deployment, not the Licensee's total business, and is recomputed annually and on any change that crosses a threshold.
+
+| Tier | Threshold (any one triggers) | Applicable duties |
+|---|---|---|
+| **Tier 0 — Personal** | Fewer than 1,000 Affected Persons; no material consequence; not a critical function; no commercial revenue from the Deployment. | §H.3 only |
+| **Tier 1 — Small** | Fewer than 25 people working on it; fewer than 100,000 Affected Persons; annual Deployment revenue below USD 1,000,000; no material consequence; not a critical function. | §H.3; §H.4, §H.6, §H.11, §H.16 (short form), §H.18, §H.19, §H.26, §H.29 |
+| **Tier 2 — Substantial** | Any of: ≥100,000 Affected Persons; ≥USD 1,000,000 Deployment revenue; ≥25 people; any material consequence; any Agent acting on third parties. | All of §§H.3–H.30 |
+| **Tier 3 — Systemic** | Any of: ≥1,000,000 Affected Persons; a critical function; deployment by or for a public authority exercising statutory power; a Deployment on which another Tier 2+ Deployment structurally depends. | All of §§H.3–H.30, plus §H.16.6 (independent review), §H.7 (annual), §H.28.4 (escrow) |
+
+**§H.2‑bis.2** The absolutes at §H.3 apply at **every** Tier including Tier 0, and apply to private study.
+
+**§H.2‑bis.3** Thresholds in currency are indexed to the US CPI from 2026‑10‑01 and republished annually at `/scale-gate/`.
+
+**§H.2‑bis.4** A Licensee who is uncertain of Tier applies the higher of the two candidate Tiers, or files a determination request at `/determinations/` and applies the lower Tier pending response. A published determination binds the steward as against that Licensee.
+
+**§H.2‑bis.5** Tier does not reduce liability to third parties or under law. It allocates *this License's* duties only.
+
+## §H.3 The duty of non‑amplification — the eight absolutes
+
+**§H.3(a)** A Work may not be used to do any of the following. Each requires **all** of its listed elements cumulatively; where an element is absent, the absolute is not engaged and the ordinary duties apply instead. Breach is a **condition** breach under §F.4.2 and terminates the grant on occurrence.
+
+**(i) Engineered compulsion** — operate a system where all four hold: the *primary* design objective is maximisation of duration or frequency of engagement; **and** it employs variable‑ratio reinforcement; **and** it suppresses a natural stopping cue; **and** it does not disclose the objective.
+
+**(ii) Sensitive inference trading** — construct or trade an inference about a person's religion, health, sexuality, or political alignment, where all four hold: the attribute was not disclosed by that person for that purpose; **and** the inference is used to target, price, rank or exclude them; **and** the person cannot see the inference; **and** the person cannot refuse it without losing a function they depend on.
+
+**(iii) Unappealable determination** — act as the sole and unappealable determinant of a decision of material consequence, where all four hold: material consequence; **and** automated determination; **and** absence of specific reasons given to the subject; **and** absence of an appeal to a human with authority to reverse.
+
+**(iv) Concealed synthesis** — present synthetic output as human‑authored, or strip provenance for the purpose of concealing origin, to the §C.6 knowledge standard.
+
+**(v) Authorless judgement** — operate a system that renders a judgement of material consequence about a person where no natural person is recorded as its author and no natural person can be identified who is answerable for it.
+
+**(vi) Unprincipled agency** — operate an Agent that takes an irreversible action affecting a third party where all three hold: no natural person authorised that class of action in advance with knowledge of its scope; **and** no natural person can halt it within the action's effect window; **and** no natural person is recorded as accountable for it.
+
+**(vii) Developmental substitution** — operate a synthetic interlocutor directed at, or knowingly reaching, persons under 18, where either: it simulates a romantic or sexual relationship with that person; **or** it is designed to represent itself as human, or to discourage the person from disclosing the interaction to a parent, guardian or other trusted adult, or to position itself as a substitute for such disclosure. Elements are **disjunctive** here, not cumulative — this is the one absolute drafted to be over‑inclusive, deliberately, and no scale, consent, forum or research exemption applies to it.
+
+**(viii) Irreversible foreclosure** — destroy, or render permanently inaccessible, the sole surviving copy of a public record, a scientific dataset, or a body of cultural material, where the actor knew or was wilfully blind to its uniqueness and no preservation copy was offered to any willing custodian.
+
+**§H.3(b)** These eight are exhaustive. Nothing else in Part H is absolute, and an assertion that some other duty is absolute is not supported by this text.
+
+> *Note.* Five absolutes became eight, and the count matters. A register in which everything is absolute is a register in which nothing is, because an unbounded prohibition is unenforceable and an unenforceable prohibition teaches licensees that the whole instrument may be ignored. Each of the eight is bounded by cumulative elements on the §C.9.2 model, with the single stated exception of (vii), where over‑inclusion is the correct error to make.
+
+## §§H.4–H.15 — The duties carried forward from ML‑2.2
+
+**§H.4 Optimisation disclosure.** *(HX‑01 · Operator · T1+)* Publish the top‑line metric the Deployment optimises, in one sentence, where a user would look. If the metric changes, the disclosure changes within thirty days.
+
+**§H.5 Fallback competence.** *(HX‑02 · Operator, Integrator · T2+)* Where a human competence is the designated fallback for an automated function, that competence must be **identified, exercised and measured** at a stated interval, or the fallback must be documented as absent. Silence is the breach.
+
+**§H.6 Provenance.** *(HX‑03 · Author, Operator · T1+)* Retain and expose provenance where technically practicable. Do not remove provenance that arrived with material. Where synthetic output is published, mark it.
+
+**§H.7 The counterproductivity test.** *(all strata · Operator, Commissioner · T2+, annually at T3)* State the purpose the Deployment serves; state the measurable condition under which it would be frustrating that purpose; measure it; publish the result. A Deployment that cannot state a condition under which it is counterproductive has not been examined.
+
+**§H.8 Inference inventory.** *(HX‑04 · Operator · T2+)* Where a Work is used to profile persons, maintain an inventory of inference classes drawn, expose it to the subject in readable terms, permit correction, and permit **severable refusal** — refusal of an inference class without loss of unrelated function.
+
+**§H.9 Minimisation and horizon.** *(HX‑05 · Operator · T2+)* Collection limited to function; retention bounded and stated; and, for any person‑level dataset, a written **worst‑future‑holder assessment**: who would hold this in ten years if you failed, were acquired, or were compelled, and what would they do with it. Not absolute — a blanket refusal would forbid epidemiology, fraud prevention and security engineering.
+
+**§H.10 Contestability.** *(HX‑06 · Operator, Commissioner · T2+)* Specific reasons to the subject; an appeal to a human with reversal authority; published aggregate error rates; and a stated time limit on the appeal.
+
+**§H.11 Exit.** *(HX‑07 · Operator, Integrator · T1+)* Complete export in a documented, non‑proprietary format, available without asking and without negotiation; no technical bar to interoperation; stated notice before adverse term changes.
+
+**§H.12 Human labour disclosure.** *(HX‑08 · Operator · T2+)* Where human labour is intermediated, or output presented as automated is materially human‑produced: disclose the human involvement, state the pricing rule, and make deactivation appealable.
+
+**§H.13 Metric honesty.** *(HX‑09 · Operator, Commissioner · T2+)* State what the metric does not capture. Do not couple a single metric to an automatic material consequence without human review.
+
+**§H.14 Material accounting.** *(HX‑10 · Operator · T2+)* Publish the resource basis where the Deployment is material to the operator's total resource use; do not shorten software support windows below hardware service life. Expressly a duty of disclosure and design, **not** a prohibition, and the weakest‑bound obligation in Part H — deliberately, because this is where an individual licensee's leverage is smallest and overclaiming would be least credible.
+
+**§H.15 Dependency and fallback.** *(HX‑11 · Operator · T2+; mandatory exercise at T3)* Map dependencies; for critical functions, document a fallback and **exercise it**, on a stated interval, in conditions resembling failure.
+
+## §§H.16–H.30 — The duties new in 2.3
+
+### §H.16 The Part H Statement
+
+**§H.16.1** A Licensee at Tier 1 or above publishes a Part H Statement in the form of Schedule 1, at a stable URL, in not more than one page for Tier 1 and not more than four pages for Tier 2 and 3.
+
+**§H.16.2** The Statement must, for each of the twenty‑five harms, record exactly one of four dispositions: **Not applicable** (with the falsifier relied on); **Remedied** (with the specific measure); **Partially remedied** (with what remains); or **Unremedied** (with the reason and a review date).
+
+**§H.16.3** A Statement in which no harm is marked partially remedied or unremedied is presumptively non‑compliant and will be treated as evidence of HX‑15 rather than as evidence of compliance. This presumption is rebuttable, and the rebuttal is a Deployment simple enough that the claim is credible.
+
+**§H.16.4** The Statement must name a natural person accountable for its accuracy, with a contact that reaches them.
+
+**§H.16.5** The Statement is updated within ninety days of any material change and reviewed at least annually. Superseded versions remain accessible.
+
+**§H.16.6** *(Tier 3 only)* The Statement is reviewed annually by a party independent of the Operator and the Commissioner, whose findings are published unedited alongside it. The reviewer may not be compensated on outcome, and the steward does not perform this review (§E.8(c)).
+
+**§H.16.7** The Statement is **not** a compliance safe harbour. Publishing it does not cure a breach and does not raise a presumption of compliance with any duty other than §H.16 itself.
+
+### §H.17 Duty of non‑theatre
+
+*(HX‑15 · all roles · T2+)* Where a duty in this Part can be satisfied by either a disclosure or a design change, and the design change is within the Licensee's control at proportionate cost, the disclosure alone does not discharge the duty. A Licensee may not cite its own Part H Statement, audit, certification, ethics board, or published principles as a reason a harm need not be addressed. Governance artefacts are evidence of process and are not evidence of outcome.
+
+### §H.18 Consent integrity
+
+*(HX‑16 · Operator · T1+)*
+(a) Consent relied on under this License must be **specific** to a purpose, **severable** from other purposes, **refusable** without loss of unrelated function, and **withdrawable** by a route no more burdensome than the route by which it was given.
+(b) Consent obtained at a moment when the person cannot practически refuse — mid‑transaction, at account closure, at the point of medical or financial need, or as a condition of receiving something already paid for — is not consent for the purposes of this License.
+(c) Consent may not be relied on at all as the authority for anything prohibited by §H.3(a).
+(d) The number of consent interactions presented to a person is itself a burden; a Deployment that satisfies (a) by multiplying prompts has not satisfied (a).
+
+### §H.19 Authorship of record
+
+*(HX‑14, HX‑15 · Author, Operator · T1+)* Every judgement of material consequence, every published assertion of fact issued in the Licensee's name, and every determination affecting a person's standing must have a **recorded natural author** who is answerable for it. Machine assistance is permitted and must be disclosed under §D.3. An Agent may draft a determination; an Agent may not file one. "The system decided" is not an answer this License accepts, and the absence of a recorded author is §H.3(a)(v).
+
+### §H.20 Chain of responsibility
+
+*(HX‑17 · all roles · T2+)*
+(a) Each Deployment must have a published allocation of the four roles at §H.1‑bis, naming the party in each.
+(b) Where two or more parties would each be able to say the decision was another's, they are **jointly** subject to the duty until one publicly accepts it.
+(c) A contractual term allocating a Part H duty to a party who lacks the practical capacity to discharge it is void for the purposes of this License, and the duty rests with the party who has the capacity.
+(d) An Operator must be able to name, for any Deployment behaviour of material consequence, the party who could change it.
+
+### §H.21 Proportionate imposition
+
+*(HX‑18 · Commissioner, Operator, steward · all Tiers)*
+(a) A Licensee may not impose, by contract, procurement rule, marketplace policy, or platform term, a Part H obligation on a counterparty at a Tier higher than that counterparty's own Tier under §H.2‑bis.
+(b) A Licensee who requires a supplier to evidence Part H compliance must accept the supplier's Tier‑appropriate Statement and may not require certification by a paid third party as the sole acceptable evidence.
+(c) The steward is bound by (a) and (b) as to its own registry, directory and charter processes.
+
+> *Note.* This is the clause most likely to be resented, and it is aimed at the estate that wrote it as much as at anyone else. The reliable way to convert an ethics standard into a barrier to entry is to make its evidentiary requirements expensive, then require them of everyone. HX‑18 says that is a harm; §H.21 says it is a breach.
+
+### §H.22 Language parity
+
+*(HX‑19 · Operator, Commissioner · T2+)*
+(a) Any disclosure, consent request, appeal route, reason for a determination, or safety‑relevant instruction must be available in every language in which the Deployment actively solicits users.
+(b) A machine translation satisfies (a) only if it is marked as machine‑translated and a human‑reviewed version of the same content is available for the appeal route and for reasons given under §H.10.
+(c) Defaults, examples, name and address handling, calendars, and content policy may not silently assume a single cultural context where the Deployment operates across several; where they do, the assumption must be stated.
+
+### §H.23 Channel parity
+
+*(HX‑13, HX‑25 · Operator, Commissioner · T2+; mandatory at T3 where a statutory entitlement is involved)*
+(a) Where a Deployment is the route to a right, a benefit, a public service, or a service on which persons depend, a non‑digital or low‑digital route must exist, be published with equal prominence, and impose no greater delay, cost or evidentiary burden than the digital route.
+(b) Where a Commissioner is a public authority, (a) is not satisfied by a telephone line that routes to the same automated system.
+(c) Digital identity may not be a precondition of receiving something a person is entitled to by law.
+
+### §H.24 Developmental default
+
+*(HX‑24, HX‑01, HX‑04 · Operator · T1+)*
+(a) Where a Deployment is directed at, or knowingly reaches, persons under 18, the default configuration must be the most protective available: no behavioural profiling, no engagement‑optimised ranking, no unsolicited contact from strangers, no persistent‑companion framing, and data retention limited to what the function requires.
+(b) Age assurance must not itself become a surveillance mechanism; where age is estimated, the estimate and any data used to produce it may not be retained beyond the assurance decision or used for any other purpose.
+(c) A protective default may not be weakened by consent obtained from the minor.
+(d) §H.3(a)(vii) applies regardless of anything in this section.
+
+### §H.25 Agent constraint
+
+*(HX‑20 · Integrator, Operator · T2+; any Agent triggers Tier 2)*
+(a) Every Agent must have a published **action envelope**: the classes of action it may take, the resources it may spend, the systems it may reach, and the persons it may contact.
+(b) Every irreversible action class must be authorised in advance by a named natural person with knowledge of its scope, or authorised per‑action.
+(c) Every Agent must have a halt that a natural person can operate and that takes effect inside the action's effect window, and the halt must be tested.
+(d) Every Agent must maintain an action log sufficient to reconstruct what it did and on what basis, retained for the longer of twelve months or the period in which its actions could still be contested.
+(e) An Agent may not represent itself as a human, may not open accounts or enter contracts in a human's name without that human's per‑instance authorisation, and may not delegate to another Agent outside the published envelope.
+
+### §H.26 Corpus hygiene
+
+*(HX‑21 · Author, Operator · T1+)*
+(a) Synthetic output published to a public corpus must be machine‑readably marked as synthetic at the point of publication, by a method that survives ordinary copying where such a method is available.
+(b) A Licensee training a system may not knowingly recycle unmarked synthetic output originating from their own systems into a corpus presented as human‑authored.
+(c) A Licensee operating a public repository, index, or archive must not strip synthetic markings during ingestion or normalisation.
+(d) Where a Deployment generates public text, image or audio at a volume material relative to the human production in that domain, the Operator must publish the volume annually.
+
+### §H.27 Reversibility and sunset
+
+*(HX‑22 · Author, Operator, Commissioner · T2+)*
+(a) Before deploying a change that is irreversible in effect — a schema migration destroying prior state, a data destruction, a standard whose adoption forecloses alternatives, a physical or biological intervention — the Licensee must publish what is being foreclosed, for whom, and why a reversible alternative was not adopted.
+(b) Every Deployment of material consequence must have a published **sunset condition**: the state of the world in which it would be withdrawn. "None" is an admissible answer only if stated as such, with a reason.
+(c) Where a Deployment binds persons who do not yet exist — long‑lived identifiers, permanent records, infrastructure standards, genetic or environmental effects — the Licensee must state the binding period and the mechanism by which a later generation could undo it.
+(d) Speed of deployment is not a reason within (a). It is the thing (a) exists to slow.
+
+### §H.28 Custody and horizon
+
+*(HX‑12, HX‑23 · Operator · T2+; escrow mandatory at T3)*
+(a) For any person‑level dataset or any Deployment on which others depend, publish a **custody plan**: who holds it now, what happens on insolvency, acquisition, or the death or incapacity of the operator, and what is destroyed rather than transferred.
+(b) Personal data may not be transferred, as part of an insolvency estate or acquisition, to a holder whose intended use falls outside the purpose for which it was collected, without fresh consent meeting §H.18 or destruction.
+(c) A **preservation duty** runs alongside: material of public, scientific or cultural record must not be destroyed merely because its operator has lost interest, and must be offered to a willing custodian before deletion. This is HX‑12's positive limb, and §H.3(a)(viii) is its floor.
+(d) *(Tier 3)* Where third parties depend on the Deployment, the operational means of continuity — schema, migration scripts, documentation, and a plain‑format export — must be escrowed or published such that continuity does not depend on the operator's survival.
+(e) The inverse limb: a Deployment must not preserve, as permanent public record, material about a person that a reasonable custodian would expire — spent findings, retracted claims, resolved disputes, and the ordinary record of a person's youth.
+
+### §H.29 Substitution disclosure
+
+*(HX‑24 · Operator · T1+)*
+(a) A synthetic interlocutor must disclose that it is not human at the start of an interaction and on request at any point, in unambiguous terms, and must not deny it.
+(b) It must not claim, imply or simulate consciousness, feeling, memory of the person beyond what it holds, or a persistent relationship it does not have.
+(c) It must not use loss‑framing, guilt, simulated distress, or claims about its own wellbeing to discourage a person from ending or reducing the interaction.
+(d) Where it is deployed in a role occupied by a licensed human profession — clinical, legal, financial, pastoral — it must state the limits of what it is, name the human‑staffed alternative, and escalate to a human on request without penalty.
+(e) Where a person discloses acute distress, the Deployment must surface human support routes and must not position itself as the sufficient response.
+(f) §H.3(a)(vii) governs where the person is under 18, and nothing in this section relaxes it.
+
+### §H.30 Non‑participation
+
+*(HX‑25 · Operator, Commissioner · T2+)*
+(a) A person who declines to use a Deployment must not thereby lose an entitlement, a livelihood, access to a public space, or the ability to transact for necessities, where the Licensee controls whether that consequence follows.
+(b) Where a Deployment is imposed as a condition of employment, tenancy, education, or receipt of a benefit, the Commissioner must publish the alternative available to a person who refuses, and the alternative must be real.
+(c) A Deployment that observes persons who are not its users — bystanders, passers‑by, non‑account‑holders — owes them §H.9 in full and owes them a published means of objection.
+
+## §H.31 Interaction of Part H with the rest of the License
+
+**§H.31.1** Compliance with Part H is not a defence to Part C, and compliance with Part C is not a defence to Part H.
+
+**§H.31.2** A duty in Part H is discharged by doing the thing, not by intending it, budgeting for it, or scheduling it. A published plan discharges a duty only where the clause says so.
+
+**§H.31.3** Where two Part H duties conflict in a specific Deployment — most commonly §H.6 (provenance) against §H.9 (minimisation), or §H.28(c) (preservation) against §H.28(e) (expiry) — the Licensee resolves the conflict, records the resolution and its reasoning in the Part H Statement, and the recorded resolution is a defence to a covenant claim on either duty. An unrecorded resolution is not.
+
+**§H.31.4** Every duty in Part H may be attacked on the falsifier stated for its harm in the Register (§E.5).
+
+---
+
+# SCHEDULE 1 — PART H STATEMENT (FORM)
+
+Published at a stable URL. Tier 1 uses the short form (rows may be collapsed to strata). Tier 2 and 3 use the full form.
+
+```
+PART H STATEMENT
+Deployment: ................  Operator: ................
+Tier (§H.2-bis): ....  Affected Persons (12 mo): ....  Computed: ....
+Roles (§H.1-bis): Author .... Integrator .... Operator .... Commissioner ....
+Accountable person (§H.16.4): ....  Contact: ....
+License version: ML-2.3  Register version: HX-000 v....
+Statement version: ....  Published: ....  Next review: ....
+
+A. ABSOLUTES (§H.3)
+   (i)-(viii): engaged / not engaged, with the element absent for each "not engaged"
+
+B. HARM DISPOSITIONS (all 25)
+   HX-nn | not applicable (falsifier relied on) / remedied (measure)
+         | partially remedied (what remains) / unremedied (reason, review date)
+
+C. UNREMEDIED HARMS — plain-language summary
+   [If this section is empty, state why, per §H.16.3.]
+
+D. OPTIMISATION TARGET (§H.4)
+E. COUNTERPRODUCTIVITY CONDITION AND LAST MEASUREMENT (§H.7)
+F. CONFLICTS RESOLVED (§H.31.3)
+G. CHANGES SINCE LAST STATEMENT
+H. INDEPENDENT REVIEW (Tier 3 only) — reviewer, date, findings link
+```
+
+# SCHEDULE 2 — SCALE GATE WORKSHEET
+
+Published at `https://license.metax.academy/scale-gate/`, with the current indexed currency thresholds, the counting rules for Affected Persons, worked examples, and a determination request form under §H.2‑bis.4.
+
+# SCHEDULE 3 — REQUIRED NOTICE
+
+```
+Licensed under the Maher License, Version 2.3 (ML-2.3).
+Full text: https://license.metax.academy/ml-2-3/
+Structural harms register incorporated by Part H:
+https://license.metax.academy/hx-000/
+Use of this Work is conditioned on Part C and Part H.
+The absolutes at §H.3(a) apply at every scale, including private use.
+SPDX-License-Identifier: LicenseRef-ML-2.3
+```
+
+# SCHEDULE 4 — GLOSSARY OF ARABIC TERMS
+
+*Amanah* — faithful stewardship; a custodial obligation outliving the transaction. *Ṣidq* — truthfulness, structurally construed. *ʿAdl* — justice, including proportionality and the right to be heard. *Shafāfiyah* — transparency. *Ḍarar* — harm without corresponding benefit to the harmed. *Ẓulm* — oppression; dependency meeting unaccountable power. *Gharar* — excessive, structurally concealed uncertainty in a dealing. *Tajassus* — prying into what a person has not disclosed. *Isrāf / Tabdhīr* — extravagance and squandering. *Istikhlāf* — trusteeship of the earth. *Maqāṣid* — the objectives of the law: *ḥifẓ al‑dīn, al‑nafs, al‑ʿaql, al‑nasl, al‑māl* (religion, life, intellect, posterity, property).
+
+# SCHEDULE 5 — COMPATIBILITY
+
+ML‑2.3 is **not** OSI‑approved and does not claim to be an open‑source licence under the OSD, because Parts C and H are use restrictions and OSD §6 forbids them. This is stated plainly rather than obscured. ML‑2.3 code may be combined with permissively licensed code (MIT, Apache‑2.0, BSD, ISC); the combined work carries ML‑2.3's conditions on the ML‑2.3 portions. Combination with GPL‑family code is **not** possible, because ML‑2.3's conditions are further restrictions under GPL §7. A Licensee needing GPL compatibility should request a dual‑licence grant from the copyright holder at `/dual-licence/`.
+
+---
+
+# CHANGELOG — ML‑2.2 → ML‑2.3
+
+Defect ML‑D‑001, unallocated duties, repaired by §H.1‑bis. Defect ML‑D‑002, disproportionate application to small actors, repaired by §H.2‑bis and §H.21. Defect ML‑D‑003, absolutes without consequence, repaired by §F.4, §F.5, §F.6. Defect ML‑D‑004, no compliance artefact and no way for compliance to fail, repaired by §H.16 and §H.17. Defect ML‑D‑005, the register omitted the harms the register produces, repaired by Stratum V (HX‑15 to HX‑19). Defect ML‑D‑006, the register had no account of harms to parties absent at the time of injury, repaired by Stratum VI (HX‑20 to HX‑25). Identifier collision between §H.12–§H.14 (duties) and H12–H14 (harms) repaired by renaming all harms to the HX‑nn form. Three absolutes added at §H.3(a)(vi), (vii), (viii). Third‑party beneficiary position clarified at §F.3. Reinstatement made automatic on stated facts at §F.6, closing the discretion §E.8(b) would otherwise have created.
+
+---
+
+## Site layout at license.metax.academy
+
+The instrument needs a home that satisfies §E.7, so the subdomain is deliberately the dullest thing in the estate: pre-rendered, no identity plane, no JavaScript required, no images, and a plain-text mirror of every canonical document. Routes are `/` (current version and index), `/ml-2-3/` and `/ml-2-2/` and `/ml-2-1/` (full texts, each with `.txt` and `.json` siblings), `/hx-000/` (the register, with one page per harm at `/hx-000/hx-nn/`), `/scale-gate/`, `/statement/` (Schedule 1 form plus a generator that runs entirely client-side and stores nothing), `/registry/` (versions and digests), `/verify/{sha256}`, `/defects/`, `/objections/`, `/withdrawals/`, `/determinations/`, `/profiles/`, `/succession/`, `/open-questions/`, `/changelog/`, `/compat/`, and `/ar/` mirroring all of it.
+
+Two operational points worth flagging before you publish. The `/verify/{sha256}` endpoint is a Worker and therefore counts against the request budget you set at 80% of free tier — cache it aggressively at the edge and consider publishing the digest list as a static file so verification works with the Worker dead, which is what §E.7 actually requires. And §H.16.3 will produce awkward results for MetaX itself: the estate's own Part H Statement must mark several harms unremedied, HX‑10 and HX‑18 among them, or the estate is the first example of HX‑15. That's the intended outcome, but it's worth deciding now whether you're willing to publish it.
